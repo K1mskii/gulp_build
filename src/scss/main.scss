@@ -1,8 +1,10 @@
 // Rules
-@import './rules/reset';
-@import './rules/fonts';
-@import './rules/mixins';
+@import "rules/mixins";
+@import "rules/fonts";
+@import "rules/globals";
 
-// Section
-@import './section/header';
-@import './section/footer';
+
+// Blocks
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/footer"
