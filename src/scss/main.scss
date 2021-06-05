@@ -1,10 +1,12 @@
-// Rules
-@import "rules/mixins";
-@import "rules/fonts";
-@import "rules/globals";
+@import './rules/global';
+@import "./rules/mixins";
+@import "./rules/vars";
+@import './rules/fonts';
 
+@import './vendor/reset';
+@import './vendor/swiper.min';
 
-// Blocks
-@import "blocks/header";
-@import "blocks/hero";
-@import "blocks/footer"
+@import "./components/header";
+@import "./components/hero";
+@import "./components/footer";
+
