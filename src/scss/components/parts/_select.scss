@@ -1,0 +1,47 @@
+// Select
+.select__block select {
+    box-sizing: border-box;
+    padding: 15px;
+    appearance: none;
+    outline: 0;
+    border: 0;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: #838383;
+    cursor: pointer;
+}
+
+
+/* Remove IE arrow */
+.select__block select::-ms-expand {
+    display: none;
+}
+
+/* Custom Select wrapper */
+.select__block {
+    margin-top: 5px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Arrow */
+.select__block::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    background-color: #333;
+    transition: .25s all ease;
+    pointer-events: none;
+}
+
+/* Transition */
+.select__block:hover::after {
+    color: #FFFFFF;
+}

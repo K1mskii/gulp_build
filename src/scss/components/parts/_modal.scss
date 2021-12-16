@@ -1,0 +1,98 @@
+.modal {
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    position: fixed;
+    background: rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.modal__content {
+    margin: 15% auto;
+    max-width: 550px;
+    position: relative;
+    padding: 30px;
+    background: var(--color-black);
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .3);
+}
+.modal__close {
+    position: absolute;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
+}
+.modal__icon {
+    width: 20px;
+    height: 20px;
+}
+.modal__icon:hover {
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.7);
+}
+.modal__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.modal__title {
+    line-height: 140%;
+    font-size: 30px;
+    letter-spacing: .5px;
+}
+.modal__desc {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.modal__input, .modal__textarea {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 15px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: none;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    color: var(--color-white);
+    outline: none;
+    resize: none;
+}
+.modal__submit {
+    margin-top: 10px;
+    width: 100%;
+    background: var(--color-white);
+    border: none;
+    padding: 15px 0;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1B1B1B;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .modal__content {
+        margin: 20% 16px;
+    } 
+}
+@media screen and (max-width: 480px) {
+    .modal__title {
+        font-size: 20px;
+    }
+    .modal__desc {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 400px) { 
+    .modal__content {
+        padding: 15px;
+    }
+    .modal__input {
+        padding: 10 7px;
+    }
+}

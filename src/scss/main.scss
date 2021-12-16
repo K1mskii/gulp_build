@@ -1,11 +1,19 @@
+// Rules
 @import './rules/global';
 @import "./rules/mixins";
 @import "./rules/vars";
 @import './rules/fonts';
 
+// Vendor
 @import './vendor/reset';
-@import './vendor/swiper-bundle';
+// @import './vendor/swiper-bundle';
 
+// Parts
+@import './components/parts/checkbox';
+@import './components/parts/select';
+@import './components/parts/modal';
+
+// Components
 @import "./components/header";
 @import "./components/hero";
 @import "./components/footer";
